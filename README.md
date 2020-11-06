@@ -2,7 +2,7 @@
 In this project we will colorize b&amp;w images using Autoencoders
 
 Two models are trained to colorize black and white images. 
-The first models is simple autoencoder and the second model is based on [Deep Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://arxiv.org/abs/1712.03400), in this the bottleneck layer of autoencoder is concatenated with the ResNets output layer before the softmax layer. The information provided by this fusing the Resnet helps in the decoder to colorize the images better. In this projected, unlike the paper, I have used densenet architecture instead of Resnet.
+The first models is simple autoencoder and the second model is based on [Deep Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://arxiv.org/abs/1712.03400), in this the bottleneck layer of autoencoder is concatenated with the ResNets output layer before the softmax layer. The information provided by fusion of the Resnet helps in the decoder to colorize the images better. In this projected, unlike the paper, I have used densenet architecture instead of Resnet.
 The paper trains the models on the images in L*a*b image space, but in this project i have used images in the RGB colorpsace.
 Each of these models takes 224x224x1 pixels B&W image as input and outputs a rgb image of 224x224x3.
 
